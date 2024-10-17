@@ -1,0 +1,322 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh; /* Adjust height if necessary */
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+h1 {
+    font-size: 35px;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-links {
+    position: absolute;
+    left: 20%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar .search-bar {
+    display: inline-block;
+}
+.navbar input[type="text"] {
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 4px;
+}
+.navbar button {
+    background-color: #2ABB7F; /* Secondary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.navbar button:hover {
+    background-color: #ddd;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 62%;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-page background image */
+.home-background {
+    position: relative;
+    background-image: url('./img/home.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+    height: 120vh; /* Adjust height if necessary */
+    width: 100%;
+    color: white;
+    display: inline-block;;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Introduction section */
+.intro {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: #00000076; /* Transparent background to make text readable */
+    width: 600px; /* Adjust height if necessary */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Book Now button */
+.book-now {
+    background-color: #2ABB7F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: #0077b6;
+}
+
+/* Social media icons container */
+.social-icons {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #2ABB7F; /* Change color on hover */
+}
+
+.img-search{
+width: 500px;
+}
+.title-search{
+background-color:white;
+width: 500px;
+font-size: large;
+color: black;
+}
+.title-search{
+background-color:white;
+width: 500px;
+font-size: large;
+color: black;
+}
+ /* About Us content styling */
+ .about-section {background: #00000026;
+    padding: 30px;
+    /*background-color: white;*/    
+    text-align: center;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Team Section styling */
+.team-section {
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.team-section h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+h2 {
+    font-size: 40px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    /*background-color: white;*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 250px;background: #00000026;
+    text-align: center;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Contact Form Section */
+.contact-section {background: #00000026;
+    padding: 50px;
+    /*background-color: white;*/
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-section input:focus, .contact-section textarea:focus {
+    outline: none;
+    border-color: #00b4d8;
+}
+
+.contact-section .submit-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section .submit-btn:hover {
+    background-color: #333;
+}
+
+
+.suggestion-box {
+    position: absolute;
+    top: 10%; /* Position it just below the search input */
+    right: 10%;
+    max-height: 600px; /* Adjust as needed */
+    overflow-y: auto; /* Scroll if needed */
+    background: transparent; /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for better visibility */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure it appears above other content */
+    display: none; /* Initially hidden */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 10px; /* Add padding inside the suggestion box */
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Space between suggestion items */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-image {
+    width: 100%; /* Full width of the suggestion box */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+    margin-bottom: 10px; /* Space between the image and text */
+}
+
+.suggestion-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between name and description */
+}
+
+.suggestion-description {
+    font-size: 14px;
+    color: #555; /* Adjust text color for better readability */
+}
+
+.suggestion-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darken the background on hover */
+}
